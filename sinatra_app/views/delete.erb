@@ -1,0 +1,7 @@
+<h1> <%= "Are you sure you want to delete #{@spacecat}?" %> </h1>
+
+<form action="/spacecats/<%=spacecat.id%>" value="DELETE">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete"> or 
+  <a href="/spacecats"> Cancel </a>
+</form>
