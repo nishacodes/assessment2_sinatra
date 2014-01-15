@@ -1,0 +1,14 @@
+<h1> Create a new SpaceCat </h1>
+
+<form action-"/spacecats" method="post">
+<label for="name"> Name:</label>
+<input type="text" name="rabbit[name]" value="<%= @spacecat.name %>"> </input><br>
+<label for="name"> Homeplanet:</label>
+<input type="text" name="rabbit[homeplanet" value="<%= @spacecat.homeplanet %>"> </input><br>
+<label for="name"> Tagline:</label>
+<input type="text" name="rabbit[tagline]" value="<%= @spacecat.tagline %>"> </input><br>
+<label for="name"> Superpower:</label>
+<input type="text" name="rabbit[superpower]" value="<%= @spacecat.superpower %>"> </input><br>
+
+<input type="submit" value="Create"> or <a href='/rabbits'>cancel</a>
+</form>
