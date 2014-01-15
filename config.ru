@@ -1,2 +1,2 @@
 require './app'
-run Something::App.new
+run Assignment::App.new

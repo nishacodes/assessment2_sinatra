@@ -1,8 +1,9 @@
 require 'bundler'
 Bundler.require
 
+set :database, "sqlite3:///spacecats.db"
 
-module Something
+module Assignment
   class App < Sinatra::Application
     
    
