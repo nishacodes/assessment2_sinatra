@@ -1,0 +1,17 @@
+<h1> Edit SpaceCat: <%= @spacecat.name %> </h1>
+
+<form action-"/spacecats" method="POST">
+  <label> Name:</label>
+  <input type="text" name="spacecat[name]" value="<%= @spacecat.name %>"> </input><br>
+  
+  <label> Homeplanet:</label>
+  <input type="text" name="spacecat[homeplanet]" value="<%= @spacecat.homeplanet %>"> </input><br>
+  
+  <label> Tagline:</label>
+  <input type="text" name="spacecat[tagline]" value="<%= @spacecat.tagline %>"> </input><br>
+  
+  <label> Superpower:</label>
+  <input type="text" name="spacecat[superpower]" value="<%= @spacecat.superpower %>"> </input><br>
+
+  <input type="submit" value="Submit"> or <a href='/spacecats'>cancel</a>
+</form>

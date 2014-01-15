@@ -2,10 +2,13 @@
 
 <ul>
   <% @spacecats.each do |s| %>
-    <li> <img src="http://placekitten.com/300/300"> </li>
-    <li> <%= "Name: #{s.name}" %> </li>
-    <li> <%= "Home Planet: #{s.homeplanet}" %> </li>
-    <li> <%= "Tagline: #{s.tagline}" %> </li>
-    <li> <%= "Superpower: #{s.superpower}" %> </li>
+    <li> <img src="http://placekitten.com/300/300"> </li><br>
+    <li> <%= "Name: #{s.name}" %> </li><br>
+    <li> <%= "Home Planet: #{s.homeplanet}" %> </li><br>
+    <li> <%= "Tagline: #{s.tagline}" %> </li><br>
+    <li> <%= "Superpower: #{s.superpower}" %> </li><br>
+    <li> <a href="/rabbits/<%= s.id %>"> Show </a> </li><br>
+    <li> <a href="/rabbits/edit/<%= s.id %>"> Edit </a> </li><br>
+    <li> <a href="/rabbits/delete/<%= s.id %>"> Delete </a> </li>
   <% end %>
 </ul>
